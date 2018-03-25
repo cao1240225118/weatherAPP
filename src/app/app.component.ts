@@ -15,7 +15,7 @@ export class MyApp {
     platform: Platform, 
     statusBar: StatusBar, 
     splashScreen: SplashScreen,
-    public jPush: JPush,
+    public jpush: JPush,
     public tokenCtrl: TokenService,
   ) {
    
@@ -24,11 +24,10 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      this.jPush.init();
-      // this.jPush.getRegistrationID().then(regid => {
+      this.jpush.init();
+      // this.jpush.getRegistrationID().then(regid => {
       //   alert(regid)
       // })
-      
       // tokenCtrl.localDataArray = JSON.stringify([{name: '从化市',isSelected: false}])
       if(platform.is("android")){
         this.baidulocation(this);
