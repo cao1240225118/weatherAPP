@@ -49,11 +49,11 @@ export class HomePage {
   }
   ionViewDidLoad() {
   
-    if(this.tokenCtrl.todayWeather){
-      this.todayWeather = JSON.parse(this.tokenCtrl.todayWeather);
-    }else{
-      this.tokenCtrl.todayWeather = this.todayWeather;
-    }
+    // if(this.tokenCtrl.todayWeather){
+    //   this.todayWeather = JSON.parse(this.tokenCtrl.todayWeather);
+    // }else{
+    //   this.tokenCtrl.todayWeather = JSON.stringify(this.todayWeather);
+    // }
     this.getNews();
     this.getWeather();
    

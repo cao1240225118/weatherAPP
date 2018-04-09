@@ -1,5 +1,12 @@
 1、安装极光推送
-cordova plugin add jpush-phonegap-plugin --variable APP_KEY=your_jpush_appkey
+如果你的极光推送未能成功发送消息的话。先打以下命令：cordova plugin list,这个命令是查看你所有插件列表
+看看cordova-plugin-jcore和jpush-phonegap-plugin的版本是不是1.1.12和3.3.2
+如果不是这两个版本，则执行以下命令（步骤不要错）：
+ionic cordova plugin rm  jpush-phonegap-plugin
+ionic cordova plugin rm cordova-plugin-jcore
+执行之后，再重新添加固定的版本号。按顺序执行以下命令，步骤不要错
+ionic cordova plugin add cordova-plugin-jcore@1.1.12
+ionic cordova plugin add jpush-phonegap-plugin@3.3.2 --variable APP_KEY=b4fb449a9b5570ab87dd959f
 npm install ionic3-jpush --save
 
 2、安装百度定位插件，ios的key值是错的，因为必须要有这个参数，所以加一个假的。

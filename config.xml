@@ -88,10 +88,10 @@
         <variable name="IOS_KEY" value="peScBqKEPsZGTclCHvl2kfxOKas536qV" />
         <variable name="IOS_LOCATION_DESC" value="请点击'好'以允许访问。" />
     </plugin>
-    <allow-navigation href="http://192.168.199.115:8100" />
     <engine name="ios" spec="~4.4.0" />
-    <plugin name="jpush-phonegap-plugin" spec="^3.4.1">
+    <engine name="android" spec="~6.3.0" />
+    <plugin name="cordova-plugin-jcore" spec="^1.1.12" />
+    <plugin name="jpush-phonegap-plugin" spec="^3.3.2">
         <variable name="APP_KEY" value="b4fb449a9b5570ab87dd959f" />
     </plugin>
-    <engine name="android" spec="~6.3.0" />
 </widget>

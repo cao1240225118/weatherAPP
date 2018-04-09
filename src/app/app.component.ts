@@ -25,6 +25,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
       this.jpush.init();
+      console.error(JSON.stringify(this.jpush.getRegistrationID()))
       // this.jpush.getRegistrationID().then(regid => {
       //   alert(regid)
       // })
